@@ -7,3 +7,13 @@ How does this library help?
 ----
 
 Batcher helps by giving you a simple framework with which to batch expensive operations (e.g. file uploads) depending on factors such as [battery life](https://github.com/Espiandev/batcher/blob/master/library/src/com/espian/batcher/HighBatteryCondition.java), [connection type](https://github.com/Espiandev/batcher/blob/master/library/src/com/espian/batcher/BasicWifiCondition.java) & [simple timings](https://github.com/Espiandev/batcher/blob/master/library/src/com/espian/batcher/TimeCondition.java). 
+
+The library works in a very simple way. The batch operation is triggered when any conditions you have set have been met. Batcher has been designed to be extended easily - the conditions can be anything you like! See Usage for examples in how to create your own conditions. 
+
+Usage
+----
+
+1. Extend Batcher, providing the type of input you wish to perform the batch operation on.
+2. Override performOperation(List<Inputs>) to specify the operation you wish to batch. 
+
+There are two base classes, ShotCondition and SwitchCondition, that can be extended to suit any conditions you want your batching to meet.
