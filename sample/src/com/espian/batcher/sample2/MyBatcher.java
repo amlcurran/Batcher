@@ -1,7 +1,6 @@
 package com.espian.batcher.sample2;
 
 import android.content.Context;
-import android.widget.Toast;
 import com.espian.batcher.Batcher;
 
 import java.util.List;
@@ -21,6 +20,6 @@ public class MyBatcher extends Batcher<String> {
 
 	@Override
 	public void performOperation(List<String> inputs) {
-		Toast.makeText(getContext(), "WORKED!", Toast.LENGTH_SHORT).show();
+		((MyActivity) getContext()).showDialog(0);
 	}
 }
