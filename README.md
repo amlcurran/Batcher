@@ -18,3 +18,7 @@ Usage
 3. Add either a single ShotCondition, or a ShotCondition and a SwitchCondition, and away you go!
 
 There are two base classes, ShotCondition and SwitchCondition, that can be extended to suit any conditions you want your batching to meet. A third, CacheListenerShotCondition, is available for conditions which require manipulation or reading of the cached input values. ShotCondition is suitable for overriding when your condition is infrequent or can be triggered by an enviromental change, such as going over a cache size limit or every X second. In contrast, SwitchConditions are used in more of a secondary role, to prevent a batch being triggered under certain conditions (e.g. Airplane mode).
+
+The image below shows the typical lifecycle of a Batcher instance, and may be helpful diagnosing issues or adding new features.
+
+![Lifecycle image](https://raw.github.com/Espiandev/batcher/master/images/lifecycle.png)
