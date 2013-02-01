@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Batcher by Espiandev</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Batcher</h1>
+        <p></p>
+
+        <p class="view"><a href="https://github.com/Espiandev/Batcher">View the Project on GitHub <small>Espiandev/Batcher</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/Espiandev/Batcher/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/Espiandev/Batcher/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/Espiandev/Batcher">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h3>Batcher by Espian(dev)</h3>
+
+<p>Batcher is an Android library designed to make automating batch processes easy and simple. With a hugely extensible framework,simple controls and in-built scenarios, Batcher is perfect for your Android apps.</p>
+
+<h2>But what is it for?</h2>
+
+<p>As <a href="http://developer.android.com/training/monitoring-device-state/index.html">detailed</a> by Reto Meier at Google, not batching operations such as file uploads can have a drastic effect on your app's battery consumption. Using Batcher, you can simply insert batching functions into your app, which will reduce the battery impact of your app. </p>
+
+<h2>Usage</h2>
+
+<p>Using Batcher is simple - add the library project to your app and then follow these instructions:
+1. Extend Batcher, providing the type of input you wish to perform the batch operation on.
+2. Override performOperation(List) to specify the operation you wish to batch.
+3. Add either a single ShotCondition, or a ShotCondition and a SwitchCondition, and away you go!</p>
+
+<p>There are two base classes, ShotCondition and SwitchCondition, that can be extended to suit any conditions you want your batching to meet. A third, CacheListenerShotCondition, is available for conditions which require manipulation or reading of the cached input values. ShotCondition is suitable for overriding when your condition is infrequent or can be triggered by an enviromental change, such as going over a cache size limit or every X second. In contrast, SwitchConditions are used in more of a secondary role, to prevent a batch being triggered under certain conditions (e.g. Airplane mode).</p>
+
+<p>The image below shows the typical lifecycle of a Batcher instance, and may be helpful diagnosing issues or adding new Condition types.</p>
+
+<p>{IMAGE}</p>
+
+<h2>Compatibility</h2>
+
+<p>Batcher is compatible all the way down to API level 7 (Android 2.1).</p>
+
+<h2>Support and Contact</h2>
+
+<p><a href="https://plus.google.com/110510888639261520925/">My Google+ page</a> is the easiest way to contact me directly. Please use the official <a href="https://github.com/Espiandev/batcher/issues">issue tracker</a> to raise problems/report bugs.</p>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/Espiandev">Espiandev</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
